@@ -1,0 +1,19 @@
+;
+; BIND data file for local loopback interface
+;
+$TTL	172800
+@	IN	SOA	ns1.elote.occ.ues.edu.sv. lordfigueroa.occ.ues.edu.sv. (
+			      2		; Serial
+			 2D		; Refresh
+			  86400		; Retry
+			2419200		; Expire
+			 1D )	; Negative Cache TTL
+;
+@	IN	NS	ns1.elote.occ.ues.edu.sv.
+;@	IN	A	10.192.4.4
+ns1	IN	A	10.192.4.4
+www	IN	A	10.192.4.8
+wwww	IN	CNAME	www
+awita	IN	A	10.192.4.7
+;www	IN	AAAA	2001:DB8:4::8
+;@	IN	AAAA	2001:db8::4
